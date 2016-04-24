@@ -1,7 +1,7 @@
 # chatty-bot
 Little framework to test and build Facebook Messenger Chatbots on Node
 
-You can your app from the commandline
+You can run your app from the command line
 
 ![Command line example](cmd.png)
 
@@ -90,8 +90,11 @@ Before deploying
   And start chatting on the command line.
 
 5. To hook up your app to messenger, create a file called ```index.js```
-  And copy the code below into it. Then deploy.
+  And copy the code below into it.
+
   To get the tokens go to https://developers.facebook.com/docs/messenger-platform/quickstart.
+
+  Then deploy.
 
   ```
   var chattybot = require('chatty-bot')
