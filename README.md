@@ -9,11 +9,18 @@ Little framework to test and build Facebook Messenger Chatbots on Node
   npm init
   ```
 
-2. Install chatty-bot
+2. Install chatty-bot globally (so it can run from the command line)
 
   ```
-  npm install -g -save https://github.com/alphillips/chatty-bot.git
+  npm install -g https://github.com/alphillips/chatty-bot.git
   ```
+
+  Then add it to your current project
+
+  ```
+  npm install -save https://github.com/alphillips/chatty-bot.git
+  ```
+
 3. Create a file called `app.js`
   This is where your chat code goes. And copy this into it.
   ```
@@ -79,10 +86,10 @@ Little framework to test and build Facebook Messenger Chatbots on Node
   To get the tokens go to https://developers.facebook.com/docs/messenger-platform/quickstart.
 
   ```
-  var webhookserver = require('./webhook')
+  var chattybot = require('chatty-bot')
   var app = require('./app')
 
-  webhookserver.listen(app,
+  chattybot.listen(app,
     process.env.PORT || 5000,
     <YOUR PAGE ACCESS TOKEN>,
     <YOUR VERFIY TOKEN>);

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-var wrapBot = require('wordwrap')(40);
+var wrapBot = require('wordwrap')(30);
 var wrapYou = require('wordwrap')(20, 50);
 var readline = require('readline');
 var colors = require('colors');
