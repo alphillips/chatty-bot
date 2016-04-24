@@ -10,18 +10,14 @@ server.hub_verify_token = null;
 
 app.set('port', (process.env.PORT || 5000))
 
-// Process application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({extended: false}))
 
-// Process application/json
 app.use(bodyParser.json())
 
-// Index route
 app.get('/', function (req, res) {
     res.send('Hello world, I am a chat bot');
 })
 
-// for Facebook verification
 app.get('/webhook/', function (req, res) {
     if (req.query['hub.verify_token'] === server.hub_verify_token) {
         res.send(req.query['hub.challenge'])
