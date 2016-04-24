@@ -103,6 +103,13 @@ Before deploying
     <YOUR VERFIY TOKEN>);
 
   ```
-  To get the tokens go to https://developers.facebook.com/docs/messenger-platform/quickstart.
 
   Then deploy.
+
+  ## Help
+
+  Get the tokens from [Facebook](https://developers.facebook.com/docs/messenger-platform/quickstart).
+
+  An excellent [beginner's tutorial](https://github.com/jw84/messenger-bot-tutorial).
+
+  This is a new project so pull requests and issues welcome.
