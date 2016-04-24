@@ -90,6 +90,12 @@ Before deploying
 
   And start chatting on the command line.
 
+  To select a structured template message type ~ followed by the title, followed by the button title.
+  e.g.
+  ```
+  ~Before we start Human
+  ```
+
 5. To hook up your app to messenger, create a file called ```index.js```
   And copy the code below into it.
 
