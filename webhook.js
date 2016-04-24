@@ -3,8 +3,6 @@ var bodyParser = require('body-parser')
 var request = require('request')
 var app = express()
 
-var chat = require(process.cwd() + '/app');
-
 var server = {};
 server.app = null;
 server.token = null;
@@ -38,10 +36,10 @@ app.post('/webhook/', function (req, res) {
         sender = event.sender.id
         if (event.message && event.message.text) {
             text = event.message.text
-            chat.request(text, sender, sendTextMessageSender(sender), sendGenericMessageSender(sender));
+            server.app.request(text, sender, sendTextMessageSender(sender), sendGenericMessageSender(sender));
         }
         if (event.postback) {
-            chat.postback(event.postback.payload, sender, sendTextMessageSender(sender), sendGenericMessageSender(sender));
+            server.app.postback(event.postback.payload, sender, sendTextMessageSender(sender), sendGenericMessageSender(sender));
         }
     }
     res.sendStatus(200)

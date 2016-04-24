@@ -127,8 +127,8 @@ Before deploying
 
   This is a new project so pull requests and issues welcome.
 
-  ## TODO
+## TODO
 
-  1. Add welcome message for a new thread
+1. Add welcome message for a new thread
 
-  2. Pass sequence number to app
+2. Pass sequence number to app
