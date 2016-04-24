@@ -82,6 +82,13 @@ Before deploying
  module.exports = app;
 
   ```
+  The `app` is passed to the chatty-app cli and server, you just need to
+  write implementations for `app.request`  and `app.postback`.
+
+  Two functions: `sendText` and `sendTemplateData` are passed to the app. Call these to either send text or a structured message.
+  ```
+  sendText('Hello there ');
+  ```
 
 4. On the command line type:
   ```
@@ -119,3 +126,9 @@ Before deploying
   An excellent [beginner's tutorial](https://github.com/jw84/messenger-bot-tutorial).
 
   This is a new project so pull requests and issues welcome.
+
+  ## TODO
+
+  1. Add welcome message for a new thread
+
+  2. Pass sequence number to app

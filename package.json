@@ -1,6 +1,6 @@
 {
   "name": "chatty-bot",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Little framework to test and build Facebook Messenger Chatbots on Node",
   "main": "webhook.js",
   "bin": {
