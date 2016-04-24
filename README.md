@@ -20,13 +20,13 @@ Before deploying
 2. Install chatty-bot globally (so it can run from the command line)
 
   ```
-  npm install -g https://github.com/alphillips/chatty-bot.git
+  npm install -g chatty-bot
   ```
 
   Then add it to your current project
 
   ```
-  npm install -save https://github.com/alphillips/chatty-bot.git
+  npm install -save chatty-bot
   ```
 
 3. Create a file called `app.js`
