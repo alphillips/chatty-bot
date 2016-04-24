@@ -1,9 +1,11 @@
 # chatty-bot
 Little framework to test and build Facebook Messenger Chatbots on Node
 
+You can your app from the commandline
 ![Command line example](cmd.png)
 
-![Meesenger example](msger.png)
+Before deploying
+![Messenger example](example-messenger.png)
 
 
 ## Getting Started
