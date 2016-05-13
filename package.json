@@ -1,5 +1,5 @@
 {
-  "name": "chatty-bot",
+  "name": "chattybot",
   "version": "1.0.1",
   "description": "Little framework to test and build Facebook Messenger Chatbots on Node",
   "main": "webhook.js",
@@ -9,20 +9,36 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository" :
-  {
-    "type" : "git",
-    "url" : "https://github.com/alphillips/chatty-bot.git"
- },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alphillips/chatty-bot.git"
+  },
   "author": "alphillips",
   "license": "MIT",
   "dependencies": {
-    "colors": "^1.1.2",
-    "readline": "^1.3.0",
-    "wordwrap": "^1.0.0",
     "body-parser": "^1.15.0",
+    "chatty-bot": "^1.0.1",
+    "colors": "^1.1.2",
+    "express": "^4.13.4",
+    "readline": "^1.3.0",
+    "request": "^2.72.0",
+    "wordwrap": "^1.0.0"
+  },
+  "keywords": [
+    "chat",
+    "bot",
+    "chatbot",
+    "facebook",
+    "messenger",
+    "cli"
+  ],
+  "bugs": {
+    "url": "https://github.com/alphillips/chatty-bot/issues"
+  },
+  "homepage": "https://github.com/alphillips/chatty-bot#readme",
+  "devDependencies": {
+    "body-parser": "^1.15.1",
     "express": "^4.13.4",
     "request": "^2.72.0"
-  },
-  "keywords":["chat","bot","chatbot","facebook","messenger","cli"]
+  }
 }
