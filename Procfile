@@ -1,1 +1,1 @@
-web: node cli.js
+web: node index.js
