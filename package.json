@@ -9,11 +9,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository" :
-  {
-    "type" : "git",
-    "url" : "https://github.com/alphillips/chatty-bot.git"
- },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alphillips/chatty-bot.git"
+  },
   "author": "alphillips",
   "license": "MIT",
   "dependencies": {
@@ -24,5 +23,16 @@
     "express": "^4.13.4",
     "request": "^2.72.0"
   },
-  "keywords":["chat","bot","chatbot","facebook","messenger","cli"]
+  "keywords": [
+    "chat",
+    "bot",
+    "chatbot",
+    "facebook",
+    "messenger",
+    "cli"
+  ],
+  "bugs": {
+    "url": "https://github.com/alphillips/chatty-bot/issues"
+  },
+  "homepage": "https://github.com/alphillips/chatty-bot#readme"
 }
