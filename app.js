@@ -1,6 +1,14 @@
 var app = {};
 
-
+app.request = function(text, senderId, sendText, sendTemplateData){
+ if(text.toLowerCase().indexOf('help') > -1){
+   sendText('I can help you. Ask me a question.');
+} else if (text.toLowerCase().indexOf('?') > -1){
+ sendTemplateData(createMsg());
+} else {
+ sendText('Hello there ');
+}
+};
 
 app.postback = function(payload, senderId, sendText, sendTemplateData){
  if(payload === 'robot'){
